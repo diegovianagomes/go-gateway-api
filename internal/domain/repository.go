@@ -4,7 +4,7 @@ package domain
 // for "./repository/account_repository"
 
 type AccountRepository interface {
-	Save(account *Account)
+	Save(account *Account) error
 	FindByAPIKey(apiKey string) (*Account, error)
 	FindByID(id string) (*Account, error)
 	Update(account *Account) error
