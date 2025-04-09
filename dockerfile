@@ -13,4 +13,4 @@ RUN go build -o /main .
 
 CMD ["/main"]
 
-COPY .env /.env
+COPY .env .

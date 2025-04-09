@@ -8,8 +8,8 @@
  Content-Type: application/json
  
  {
-     "name": "John Doe",
-     "email": "john@doe.com"
+     "name": "Diego",
+     "email": "Diego@doe.com"
  }
  
  ### Obter dados da conta

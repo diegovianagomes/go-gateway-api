@@ -21,12 +21,17 @@ services:
       context: . 
     ports:
       - "8080:8080"
-    env_file:
-      - .env
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_NAME=gateway
+      - DB_SSL_MODE=disable
+      - HTTP_PORT=8080
     depends_on:
       - db
     restart: unless-stopped
 
 volumes:
   postgres_data:
-  - .env:/app/.env 
