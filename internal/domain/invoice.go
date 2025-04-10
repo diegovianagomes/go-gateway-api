@@ -53,7 +53,7 @@ type CreditCard struct {
 	CVV            string
 	ExpiryMonth    int
 	ExpiryYear     int
-	CardHolderName string
+	CardholderName string
 }
 
 // NewInvoice creates a new invoice
